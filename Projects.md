@@ -1,6 +1,6 @@
 ---
 layout: page
-title: boouung
+title: Projects
 description: Things that I am doing
 permalink: /Projects/
 ---
