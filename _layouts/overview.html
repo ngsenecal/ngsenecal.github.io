@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{page.title}}</title>
+    </head>
+    <body>
+        <header>
+            <{% include navbar.html %}>
+        </header>
+        <main>
+            {% for post in site.posts %}
+            <h2>{{ post.title }}</h2>
+            {% endfor %}
+        </main>
+        <footer>
+            -This is a footer and it is good-
+        </footer>
+    </body>
+</html>
