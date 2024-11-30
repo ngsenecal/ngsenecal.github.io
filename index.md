@@ -1,7 +1,7 @@
 ---
 layout: page
 title: boouung
-description: This is what this is about, I suppose
+description: Main Page
 ---
 
 [Test](https://boouung.github.io/test)
