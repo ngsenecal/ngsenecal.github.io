@@ -1,8 +1,10 @@
 ---
-title: My page
-layout: default
+layout: page
+title: boouung
 description: This is what this is about, I suppose
 ---
+
+[ABOUT](https://boouung.github.io/test)
 
 This is a bunch of random text that I am using to fill space in order to see what I need to adjust. Pay it no mind unless you feel obligated to.
 
