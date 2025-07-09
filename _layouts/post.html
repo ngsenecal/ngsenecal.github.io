@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            img{
-                aspect-ratio: 1;
-                width: 10vw;
-                height: auto;
-            }
-        </style>
-        <title>{{page.title}}</title>
-    </head>
-    <body>
-        <header>
-            {% include navbar.html %}
-        </header>
-        <main>{{content}}</main>
-        <footer>
-            -This is a footer and it is good-
-        </footer>
-    </body>
+
+<head>
+    <style>
+        img {
+            aspect-ratio: 1;
+            width: 10vw;
+            height: auto;
+        }
+        
+        body {
+            margin: 50px 300px 50px 300px; 
+        }
+    </style>
+    <title>{{page.title}}</title>
+</head>
+
+<body>
+    <header>
+        {% include navbar.html %}
+    </header>
+    <main>
+        <div>
+            {{content}}
+        </div>
+    </main>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+
 </html>

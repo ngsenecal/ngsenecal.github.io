@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{page.title}}</title>
+        <style>
+            body {
+                margin: 50px 300px 50px 300px; 
+            }
+            td {
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            {% include navbar.html %}
+        </header>
+            <main>
+                <body>
+                <center>
+                    <table> <!--border = "1"-->
+                        <tr>
+                            <th><center>Main Projects</center></th>
+                            <th><center>Side Projects</center></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    {% for proj in site.pages %}
+                                        {% if proj.tags contains 'main' %}
+                                            <center>
+                                                <p><img src="\assets\proj_img\{{ proj.title }}\main.jpg" alt="thumb" style="width:200px;"></p>
+                                                <p><a href = {{proj.url}}>{{ proj.title }}</a> </p>
+                                            </center>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    {% for proj in site.pages %}
+                                        {% if proj.tags contains 'fun' %}
+                                            <center>
+                                                <p><img src="\assets\proj_img\{{ proj.title }}\main.jpg" alt="thumb" style="width:200px;"></p>
+                                                <p><a href = {{proj.url}}>{{ proj.title }}</a> </p>
+                                            </center>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </td>
+                        </tr>
+                    </table> 
+                </center>
+            </body>
+            </main>
+        <footer>
+            {% include footer.html %}
+        </footer>
+    </body>
+</html>

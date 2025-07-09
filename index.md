@@ -6,11 +6,13 @@ description: Main Page
 
 <head>
 <style>
-body {background-color: powderblue;}
+    body {
+        background-image: url(/assets/files/classicmac.png);
+    }
 </style>
 </head>
 
-[Test](https://boouung.github.io/test)
+[Test](https://ngsenecal.github.io/test)
 
 <p style="color:red">This is a bunch of random text that I am using to fill space in order to see what I need to adjust. Pay it no mind unless you feel obligated to.
 

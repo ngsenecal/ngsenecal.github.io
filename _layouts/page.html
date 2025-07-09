@@ -2,14 +2,23 @@
 <html>
     <head>
         <title>{{page.title}}</title>
+        <style>
+            div {
+                margin: 50px 300px 50px 300px;
+            }
+        </style>
     </head>
     <body>
         <header>
             {% include navbar.html %}
         </header>
-        <main>{{content}}</main>
+            <main>
+                <div>   
+                    {{content}}
+                </div>
+            </main>
         <footer>
-            -This is a footer and it is good-
+            {% include footer.html %}
         </footer>
     </body>
 </html>
