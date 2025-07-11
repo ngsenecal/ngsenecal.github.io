@@ -3,34 +3,41 @@
     <head>
         <title>{{page.title}}</title>
         <style>
-            body{
-            margin: 50px 300px 50px 300px; 
+            td {
+                vertical-align: center;
             }
-            div {
-                margin: 50px 50px 50px 50px;
+            table{
+                padding: 15px;
+                border-spacing: 30px;
+            }
+            body {
+                margin: 0px 300px 0px 300px; 
+                background-image: url(/assets/files/classicmac.png);
             }
         </style>
     </head>
     <body>
-        <header>
-            {% include navbar.html %}
-        </header>
-        <main>
-            <center>
-                <div>
-                    {% for post in site.posts %}
-                        {% if post.categories contains page.category %}
-                            <p>
-                                <img src="\assets\post_img\{{ post.date | date: "%Y-%m-%d" }}\main.jpg" alt="thumb" style="width:128px;">
-                                <a href = {{post.url}}>{{ post.title }}</a> ({{ post.date | date: "%m %d, %Y" }}): {{post.summary}}
-                            </p>
-                            {% endif %}
-                    {% endfor %}
-                </div>
-            </center>
-        </main>
-        <footer>
-            {% include footer.html %}
-        </footer>
+        <div style="background: rgba(200, 200, 200, 0.4); height: 100vh;">
+            <header>
+                {% include navbar.html %}
+            </header>
+            <main>
+                <center>
+                    <div>
+                        {% for post in site.posts %}
+                            {% if post.categories contains page.category %}
+                                <p>
+                                    <img src="\assets\blog\{{ post.date | date: "%Y-%m-%d" }}\thumb.jpg" alt="thumb" style="width:96px;">
+                                    <a href = {{post.url}}>{{ post.title }}</a> ({{ post.date | date: "%m %d, %Y" }}): {{post.summary}}
+                                </p>
+                                {% endif %}
+                        {% endfor %}
+                    </div>
+                </center>
+            </main>
+            <footer>
+                {% include footer.html %}
+            </footer>
+        </div>
     </body>
 </html>
