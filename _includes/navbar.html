@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        @font-face {
+            font-family: "myFirstFont";
+            src: url("../assets/files/Glass_TTY_VT220.ttf");
+        }
+        * {
+            font-family: "myFirstFont";
+            font-weight: 100;
+            color: rgb(255,176,0);
+        }
+    </style>
     <body>
         <main>
             <center>
                 <br>
-                <h1 style="margin: 0;"> *Insert Title Here* </h1>
+                <h1 style="margin: 0;"> > Neil's Terminal </h1>
                 <p>
                 <a href="{{ '/' | relative_url }}">Home</a> |
                 <a href="/Blog/">Blog</a> |
                 <a href="/Projects/">Projects</a> |
                 <a href="/About/">About</a>
-                <hr>
+                <hr style="border: 1px dashed; color: rgb(255,176,0);">
                 </p>
             </center>
         </main>

@@ -8,14 +8,14 @@
             }
             body {
                 margin: 0px 300px 0px 300px; 
-                background-image: url(/assets/files/classicmac.png);
+                background-color: black;
             }   
             table {
                 border-spacing: 20px;
             }
         </style>
     </head>
-    <div style="background: rgba(200, 200, 200, 0.5); height: 100vh">
+    <div style="height: 100vh">
         <header>
             {% include navbar.html %}
         </header>
@@ -24,8 +24,8 @@
                 <center>
                     <table> <!--border = "1"-->
                         <tr>
-                            <th><center>Main Projects</center></th>
-                            <th><center>Side Projects</center></th>
+                            <th><center><h2>Main Projects:</h2><h3>Longer and more labor intensive.</h3></center></th>
+                            <th><center><h2>Side Projects:</h2><h3>Spurt of the moment, "fun" projects.</h3></center></th>
                         </tr>
                         <tr>
                             <td>
@@ -33,7 +33,7 @@
                                     {% for proj in site.pages %}
                                         {% if proj.tags contains 'main' %}
                                             <center>
-                                                <p><img src="\assets\proj_img\{{ proj.title }}\thumb.jpg" alt="thumb" style="width:200px;"> <br>
+                                                <p><img src="\assets\proj_img\{{ proj.title }}\thumb.jpg" alt="thumb" style="height:200px;"> <br>
                                                 <a href = {{proj.url}}>{{ proj.title }}</a></p>
                                             </center>
                                         {% endif %}
@@ -45,7 +45,7 @@
                                     {% for proj in site.pages %}
                                         {% if proj.tags contains 'fun' %}
                                             <center>
-                                                <p><img src="\assets\proj_img\{{ proj.title }}\thumb.jpg" alt="thumb" style="width:200px;"> <br>
+                                                <p><img src="\assets\proj_img\{{ proj.title }}\thumb.jpg" alt="thumb" style="height:200px;"> <br>
                                                 <a href = {{proj.url}}>{{ proj.title }}</a> <br /></p>
                                             </center>
                                         {% endif %}

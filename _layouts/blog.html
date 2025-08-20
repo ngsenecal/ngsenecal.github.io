@@ -12,29 +12,27 @@
             }
             body {
                 margin: 0px 300px 0px 300px; 
-                background-image: url(/assets/files/classicmac.png);
+                background-color: black;
             }
         </style>
     </head>
     <body>
-        <div style="background: rgba(200, 200, 200, 0.4); height: 100vh;">
+        <div style="height: 100vh;">
             <header>
                 {% include navbar.html %}
             </header>
-            <main>
-                <center>
+                <main>
                     <div>
                         {% for post in site.posts %}
                             {% if post.categories contains page.category %}
                                 <p>
-                                    <img src="\assets\blog\{{ post.date | date: "%Y-%m-%d" }}\thumb.jpg" alt="thumb" style="width:96px;">
+                                    <img src="\assets\blog\{{ post.date | date: "%Y-%m-%d" }}\thumb.jpg" alt="thumb" style="width:100px;"> <!--THis is going to throw an error if not jpg-->
                                     <a href = {{post.url}}>{{ post.title }}</a> ({{ post.date | date: "%m %d, %Y" }}): {{post.summary}}
                                 </p>
                                 {% endif %}
                         {% endfor %}
                     </div>
-                </center>
-            </main>
+                </main>
             <footer>
                 {% include footer.html %}
             </footer>
