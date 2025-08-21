@@ -11,7 +11,7 @@
                 border-spacing: 30px;
             }
             body {
-                margin: 0px 300px 0px 300px; 
+                margin: 0 auto;
                 background-color: black;
             }
         </style>
@@ -22,7 +22,7 @@
                 {% include navbar.html %}
             </header>
                 <main>
-                    <div>
+                    <div style="margin: 0% 5% 0% 5%;">
                         {% for post in site.posts %}
                             {% if post.categories contains page.category %}
                                 <p>

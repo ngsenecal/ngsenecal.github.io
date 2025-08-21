@@ -11,8 +11,16 @@ description: Main Page
             <th style text-align="center;">Status updates and thoughts:</th>
         </tr>
         <tr>
-            <td style text-align="center;"> <img src="assets\img\doge.jpg" alt="image" style="width:200px"> </td>
-            <td style text-align="center;"> <img src="assets\img\doge.jpg" alt="image" style="width:200px"> </td>
+            <td><center>
+            <a href="/Projects">
+                <img src="assets\img\slideshow.gif" alt="things" style="width:300px">
+            </a>
+            </center></td>
+            <td><center>
+            <a href="/Blog">
+            <img src="assets\img\Hal.jpg" alt="Hal" style="width:300px">
+            </a>
+            </center> </td>
         </tr>
     </table>
 </center>
