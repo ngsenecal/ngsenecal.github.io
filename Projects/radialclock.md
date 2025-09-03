@@ -13,4 +13,4 @@ Instead of hands that originate in the center of the clock, time is instead indi
 
 This particular design is digital and is powered by a raspberry pi. To show how the central area can be used, I mounted a digital display that shows the time in roman numerals. Scaled down, I think this would make a very interesting smart watch design.
 
-Downloads and instructions for the clock can be found [here](/404).
+Downloads and instructions for the clock can be found [here.](https://github.com/ngsenecal/Radial-Clock)

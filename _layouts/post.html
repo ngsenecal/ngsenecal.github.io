@@ -38,12 +38,12 @@
                     <table>
                         <tr>
                             <th>
-                                {% for image in site.static_files %}
+                                {% for image in site.static_files %} <!-- Images are not showing in blog posts BECAUSE file paths are different for normal blog posts vs projects. FIX -->
                                     {% if image.path contains page.title %}{% unless image.path contains 'thumb' %}
                                         <div class="dropdown">
                                             <span><img src="{{ site.baseurl }}{{ image.path }}" alt="image" style="width:400px"></span>
                                             <div class="dropdown-content">
-                                                <img src="{{ site.baseurl }}{{ image.path }}" alt="image">
+                                                <img src="{{ site.baseurl }}{{ image.path }}" style="width:800px" alt="image">
                                                 <p> {{image.path| split: "/" | last | split: "." | first}}</p>
                                             </div>
                                         </div>
