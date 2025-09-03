@@ -1,1 +1,2 @@
-# boouung.github.io
+# Neil's Terminal
+A website for showcasing my creations.
