@@ -17,7 +17,8 @@ permalink: /About/
             My name is Neil Senecal, a Mechanical Engineering Student at Brigham Young University.<br> 
             My strengths lie in my problem solving abilities and my refusal to give up. As a result, I have experience in all facets of engineering: electrical, physical, and software.<br><br>
             I am familiar with Python and C++ for embedded systems and have experience with 3D modeling and additive manufacturing. My tool of choice is FreeCAD, but I have experience with Autodesk products.<br><br>
-            In my free time I am always looking for something new to fiddle with, which is how most of my projects ended up happening, like this website!
+            In my free time I am always looking for something new to fiddle with, which is how most of my projects ended up happening, like this website!<br><br>
+            My portfolio and resume can be viewed <a href="/Portfolio">here</a>.
             </h3></td>
         </tr>
     </table>
